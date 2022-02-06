@@ -11,11 +11,11 @@ Traceability &amp; Monitoring practice.
 ## .Net Core 
 .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
 
-## Prometheus
-Prometheus is a free software application used for event monitoring and alerting. It records real-time metrics in a time series database built using a HTTP pull model, with flexible queries and real-time alerting.
-
 Reference:
 https://dotnet.microsoft.com/en-us/
+
+## Prometheus
+Prometheus is a free software application used for event monitoring and alerting. It records real-time metrics in a time series database built using a HTTP pull model, with flexible queries and real-time alerting.
 
 Reference:
 https://prometheus.io/
