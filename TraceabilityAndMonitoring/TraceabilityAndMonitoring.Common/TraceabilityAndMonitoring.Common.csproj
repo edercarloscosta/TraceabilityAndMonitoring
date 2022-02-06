@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="App.Metrics" Version="4.4.0-preview.0.4" />
+      <PackageReference Include="App.Metrics.Abstractions" Version="4.4.0-preview.0.4" />
+      <PackageReference Include="App.Metrics.AspNetCore.Core" Version="4.4.0-preview.0.4" />
+      <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.2-mauipre.1.22054.8" />
+      <PackageReference Include="OpenTelemetry" Version="1.2.0-rc2" />
+      <PackageReference Include="OpenTelemetry.Api" Version="1.2.0-rc2" />
+      <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.2.0-rc2" />
+      <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.2.0-rc2" />
+      <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc9" />
+      <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9" />
+      <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc9" />
+      <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="6.0.2-mauipre.1.22054.8" />
+    </ItemGroup>
+
+</Project>

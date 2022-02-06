@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceabilityAndMonitoring.ServiceA", "TraceabilityAndMonitoring.ServiceA\TraceabilityAndMonitoring.ServiceA.csproj", "{73C70C35-B15B-4761-82EB-AC9532EBED2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceabilityAndMonitoring.ServiceB", "TraceabilityAndMonitoring.ServiceB\TraceabilityAndMonitoring.ServiceB.csproj", "{FAC4C851-5170-4C02-AC47-62B577562163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceabilityAndMonitoring.Common", "TraceabilityAndMonitoring.Common\TraceabilityAndMonitoring.Common.csproj", "{AE6361F4-9B49-4EA0-A1C6-865AE858EBD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C70C35-B15B-4761-82EB-AC9532EBED2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C70C35-B15B-4761-82EB-AC9532EBED2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C70C35-B15B-4761-82EB-AC9532EBED2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C70C35-B15B-4761-82EB-AC9532EBED2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC4C851-5170-4C02-AC47-62B577562163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC4C851-5170-4C02-AC47-62B577562163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC4C851-5170-4C02-AC47-62B577562163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC4C851-5170-4C02-AC47-62B577562163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6361F4-9B49-4EA0-A1C6-865AE858EBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6361F4-9B49-4EA0-A1C6-865AE858EBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6361F4-9B49-4EA0-A1C6-865AE858EBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6361F4-9B49-4EA0-A1C6-865AE858EBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
