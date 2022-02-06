@@ -11,6 +11,18 @@ services:
   #    volumes:
   #      - prometheus:/prometheus
   
+  service_a:
+    image: eccbot/servicea:latest
+    container_name: service_a    
+    ports: 
+      - "5004:80"
+  
+  service_b:
+    image: eccbot/serviceb:latest
+    container_name: service_b
+    ports:
+      - "5002:80"
+      
   grafana:
     image: grafana/grafana
     container_name: grafana

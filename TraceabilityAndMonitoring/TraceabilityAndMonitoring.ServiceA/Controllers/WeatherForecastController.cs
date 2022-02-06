@@ -59,8 +59,30 @@ namespace TraceabilityAndMonitoring.ServiceA.Controllers
             var result = resultServiceA.Concat(httpClient);
 
             // It's a Event mindset properly and it's suitable for recording modest number of events. 
-            _activity?.AddEvent(new("[ServiceA::EventTriggered::WeatherForecast - Service A]", DateTimeOffset.Now));
+            _activity?.AddEvent(
+                new(
+                    "[ServiceA::EventTriggered::WeatherForecast - Service A]", 
+                    DateTimeOffset.Now));
+            
             return result;
+        }
+        
+        [HttpGet("get_errors")]
+        public void GetErrors()
+        {
+            _logger.LogError("[ServiceA::GetErrors]");
+            _activity?.SetTag("[ServiceA::GetErrors]",  "GetErrors");
+            
+            _httpClientRequest.TryHttpClientRequest();
+        }
+        
+        [HttpGet("get_errors_from_dependencies")]
+        public void GetErrorsFromDependencies()
+        {
+            _logger.LogInformation("[ServiceA::GetInnerErrors]");
+            _activity?.SetTag("[ServiceA::GetInnerErrors]",  "GetInnerErrors");
+            
+            _httpClientRequest.TryInnerHttpClientRequest();
         }
     }
 }

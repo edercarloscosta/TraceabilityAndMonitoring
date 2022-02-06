@@ -6,5 +6,9 @@ namespace TraceabilityAndMonitoring.ServiceA.Http
     public interface IHttpRequestIntegration
     {
         Task<IEnumerable<WeatherForecast>> HttpClientRequest();
+        
+        void TryHttpClientRequest();
+
+        void TryInnerHttpClientRequest();
     }
 }

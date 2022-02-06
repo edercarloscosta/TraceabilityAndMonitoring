@@ -63,10 +63,30 @@ namespace TraceabilityAndMonitoring.ServiceB.Controllers
                  */
                 _activity?.SetTag("[ServiceB::Processing]", "Saying hello from service B processing a lot ;)");     
             }
-            _activity?.SetTag("[ServiceB::Get]", "Saying hello from service B ;)");
+            //_activity?.SetTag("[ServiceB::Get]", "Saying hello from service B ;)");
             _activity?.AddEvent(new("[ServiceB::EventTriggered::WeatherForecast - Service B]", DateTimeOffset.Now));
             
             return resultServiceB;
+        }
+
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [HttpGet("get_inner_errors")]
+        public void GetErrors()
+        {
+            try
+            {
+                _logger.LogInformation("[ServiceB::GetInnerErrors]");
+                throw new ArgumentNullException(nameof(WeatherForecastController));
+            }
+            catch (Exception e)
+            {
+                _activity?.SetTag(
+                    "[ServiceB::ExceptionEventTriggered::ServiceB::GetErrors]",
+                    e.Message);
+                throw;
+            }
+          
+            
         }
     }
 }
